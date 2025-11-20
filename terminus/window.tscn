@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://dr7ku8xqjfip1"]
+
+[ext_resource type="FontFile" uid="uid://do7mkrl08rpkc" path="res://★ Files ★/★ Fonts ★/dogicabold.ttf" id="1_hjewq"]
+[ext_resource type="FontFile" uid="uid://c0f1l8w6x467d" path="res://★ Files ★/★ Fonts ★/dogica.ttf" id="2_nfq5s"]
+
+[sub_resource type="Theme" id="Theme_srjdr"]
+default_font = ExtResource("1_hjewq")
+
+[sub_resource type="Theme" id="Theme_4vd1n"]
+default_font = ExtResource("2_nfq5s")
+default_font_size = 15
+
+[node name="Window" type="Window"]
+oversampling_override = 1.0
+title = "Files"
+initial_position = 1
+size = Vector2i(430, 230)
+theme = SubResource("Theme_srjdr")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bar" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Bar"]
+layout_mode = 2
+theme = SubResource("Theme_4vd1n")
+text = "Label"
+
+[node name="ContentArea" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 79.0
+offset_right = 80.0
+offset_bottom = 230.0
