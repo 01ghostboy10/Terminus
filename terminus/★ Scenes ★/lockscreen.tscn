@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://r52l6fqy06yx"]
+
+[ext_resource type="Script" uid="uid://dy50cgluxjsiu" path="res://★ Scenes ★/lockscreen.gd" id="1_juwbm"]
+[ext_resource type="Texture2D" uid="uid://cfbkytsipfctj" path="res://★ Files ★/★ Images ★/Wallpaper.png" id="1_tj208"]
+[ext_resource type="Texture2D" uid="uid://beyg6x6tn7j00" path="res://★ Files ★/★ Images ★/shiba-star.png" id="2_cpucc"]
+[ext_resource type="FontFile" uid="uid://cu3ebes5jtte8" path="res://★ Files ★/★ Fonts ★/easvhs.ttf" id="3_cpucc"]
+
+[node name="Lockscreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_juwbm")
+
+[node name="wallpaper" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_tj208")
+expand_mode = 2
+flip_h = true
+flip_v = true
+
+[node name="ShibaStar" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("2_cpucc")
+
+[node name="password" type="LineEdit" parent="."]
+custom_minimum_size = Vector2(130, 40)
+layout_mode = 0
+offset_left = 512.0
+offset_top = 407.0
+offset_right = 642.0
+offset_bottom = 447.0
+theme_override_colors/font_color = Color(0.70983016, 0.88311064, 0.73866194, 1)
+theme_override_colors/font_placeholder_color = Color(1, 1, 1, 0.6)
+theme_override_fonts/font = ExtResource("3_cpucc")
+theme_override_font_sizes/font_size = 17
+placeholder_text = "dsdsdsdsds"
+secret = true
+secret_character = "*"

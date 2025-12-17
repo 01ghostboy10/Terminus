@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cf0aarbbrff5x"]
+[gd_scene load_steps=15 format=3 uid="uid://cf0aarbbrff5x"]
 
 [ext_resource type="Texture2D" uid="uid://cfbkytsipfctj" path="res://★ Files ★/★ Images ★/Wallpaper.png" id="1_0g0ev"]
 [ext_resource type="Script" uid="uid://dl5hts6nabli6" path="res://★ Scripts ★/main.gd" id="1_ms1t0"]
@@ -6,12 +6,19 @@
 [ext_resource type="Texture2D" uid="uid://wkwu1f7rioov" path="res://★ Files ★/★ Images ★/NOTES-ICON.png" id="3_xtgqh"]
 [ext_resource type="PackedScene" uid="uid://cvj3poxsk6yjc" path="res://★ Scenes ★/terminal.tscn" id="4_ocyab"]
 [ext_resource type="Texture2D" uid="uid://dqgl40wynkvum" path="res://★ Files ★/★ Images ★/NOTES-ICON-OUTLINE.png" id="4_xmn2q"]
+[ext_resource type="PackedScene" uid="uid://vtuwavjaku7o" path="res://★ Scenes ★/messages.tscn" id="5_8sq8x"]
 [ext_resource type="FontFile" uid="uid://cu3ebes5jtte8" path="res://★ Files ★/★ Fonts ★/easvhs.ttf" id="6_upfbo"]
 [ext_resource type="Texture2D" uid="uid://cygf15b6r44jt" path="res://★ Files ★/★ Images ★/TERMINAL-ICON.png" id="7_f6x6g"]
 [ext_resource type="Texture2D" uid="uid://cb0dvloxptvjw" path="res://★ Files ★/★ Images ★/TERMINAL-ICON-OUTLINE.png" id="8_tnhrd"]
+[ext_resource type="Texture2D" uid="uid://ngo5c3a340s2" path="res://★ Files ★/★ Images ★/MESSAGES-ICON.png" id="9_713c3"]
+[ext_resource type="Texture2D" uid="uid://d2xmeftpuxnqx" path="res://★ Files ★/★ Images ★/MESSAGES-ICON-OUTLINE.png" id="10_j3xoj"]
 
 [sub_resource type="Theme" id="Theme_ocyab"]
 default_font = ExtResource("6_upfbo")
+
+[sub_resource type="Theme" id="Theme_8sq8x"]
+default_font = ExtResource("6_upfbo")
+default_font_size = 20
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -36,6 +43,8 @@ expand_mode = 2
 
 [node name="Terminal" parent="." instance=ExtResource("4_ocyab")]
 
+[node name="Messages" parent="." instance=ExtResource("5_8sq8x")]
+
 [node name="notes-icon" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 35.0
@@ -55,6 +64,16 @@ offset_bottom = 334.0
 scale = Vector2(0.7, 0.7)
 texture_normal = ExtResource("7_f6x6g")
 texture_hover = ExtResource("8_tnhrd")
+
+[node name="messages-icon" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 292.0
+offset_right = 205.0
+offset_bottom = 460.0
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("9_713c3")
+texture_hover = ExtResource("10_j3xoj")
 
 [node name="Bar" type="ColorRect" parent="."]
 layout_mode = 1
@@ -107,5 +126,16 @@ text = "sdsd"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Label" type="Label" parent="Bar"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 12.0
+offset_right = 213.0
+offset_bottom = 35.0
+theme = SubResource("Theme_8sq8x")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "made by @onlyth3best"
+
 [connection signal="pressed" from="notes-icon" to="Notes" method="_on_notes_pressed"]
 [connection signal="pressed" from="terminal-icon" to="Terminal" method="_on_TERMINAL_pressed"]
+[connection signal="pressed" from="messages-icon" to="Messages" method="_on_messagesicon_pressed"]
