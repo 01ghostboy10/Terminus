@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://vtuwavjaku7o"]
+[gd_scene load_steps=18 format=3 uid="uid://vtuwavjaku7o"]
 
 [ext_resource type="FontFile" uid="uid://cu3ebes5jtte8" path="res://★ Files ★/★ Fonts ★/easvhs.ttf" id="1_3ryei"]
 [ext_resource type="Script" uid="uid://2h0tyg2r8h1a" path="res://★ Scripts ★/messages.gd" id="2_ge0cd"]
 [ext_resource type="Texture2D" uid="uid://beyg6x6tn7j00" path="res://★ Files ★/★ Images ★/shiba-star.png" id="3_ge0cd"]
 [ext_resource type="FontFile" uid="uid://dfbtv28p3cspu" path="res://★ Files ★/★ Fonts ★/EpilepsySans.ttf" id="4_wrgkd"]
 [ext_resource type="Texture2D" uid="uid://chsa7lx4f87ih" path="res://★ Files ★/★ Images ★/palu-pfp.png" id="5_rlxar"]
+[ext_resource type="Texture2D" uid="uid://fqcuuj1p1vfx" path="res://★ Files ★/★ Images ★/lio.png" id="6_86b7h"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wrgkd"]
 
@@ -168,21 +169,21 @@ size_flags_vertical = 3
 
 [node name="pfp" type="TextureRect" parent="Panel/VBoxContainer/ScrollContainer/contact_list/Contact3/vbox/hbox"]
 layout_mode = 2
-texture = ExtResource("3_ge0cd")
+texture = ExtResource("6_86b7h")
 expand_mode = 3
 
 [node name="name" type="Label" parent="Panel/VBoxContainer/ScrollContainer/contact_list/Contact3/vbox/hbox"]
 custom_minimum_size = Vector2(0, 30)
 layout_mode = 2
 theme = SubResource("Theme_rlxar")
-text = "#1250-yaps"
+text = "m6kj1rp"
 vertical_alignment = 2
 
 [node name="description" type="Label" parent="Panel/VBoxContainer/ScrollContainer/contact_list/Contact3/vbox"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_wrgkd")
 theme_override_font_sizes/font_size = 12
-text = " amazing people only!!"
+text = "not my real name :p"
 
 [node name="Contact4" type="Button" parent="Panel/VBoxContainer/ScrollContainer/contact_list"]
 custom_minimum_size = Vector2(165, 70)
@@ -193,7 +194,7 @@ custom_minimum_size = Vector2(0, 45)
 layout_mode = 0
 offset_right = 168.0
 offset_bottom = 61.0
-theme_override_constants/separation = 2
+theme_override_constants/separation = -1
 
 [node name="hbox" type="HBoxContainer" parent="Panel/VBoxContainer/ScrollContainer/contact_list/Contact4/vbox"]
 custom_minimum_size = Vector2(0, 45)
@@ -209,14 +210,15 @@ expand_mode = 3
 custom_minimum_size = Vector2(0, 30)
 layout_mode = 2
 theme = SubResource("Theme_rlxar")
-text = "onlyth3best"
+text = "OTHERWORLD"
 vertical_alignment = 2
 
 [node name="description" type="Label" parent="Panel/VBoxContainer/ScrollContainer/contact_list/Contact4/vbox"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_wrgkd")
 theme_override_font_sizes/font_size = 12
-text = " *screams in homework*"
+text = "//your guide to the better place//
+~THE OTHERWORLD HELPBOT"
 
 [node name="Contact5" type="Button" parent="Panel/VBoxContainer/ScrollContainer/contact_list"]
 custom_minimum_size = Vector2(165, 70)
@@ -395,3 +397,5 @@ text = "dsdsds"
 [connection signal="close_requested" from="." to="." method="_on_messages_close_requested"]
 [connection signal="pressed" from="Panel/VBoxContainer/ScrollContainer/contact_list/Contact1" to="." method="_on_contact1_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/ScrollContainer/contact_list/Contact2" to="." method="_on_contact2_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/ScrollContainer/contact_list/Contact3" to="." method="_on_contact3_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/ScrollContainer/contact_list/Contact4" to="." method="_on_contact4_pressed"]

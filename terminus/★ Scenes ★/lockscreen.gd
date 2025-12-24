@@ -14,3 +14,6 @@ func _input(event):
 			print("not the password")
 	else:
 		pass
+		#keyboard noises
+	if event is InputEventKey and event.pressed and not event.echo:
+		$keyboard_noises.play()

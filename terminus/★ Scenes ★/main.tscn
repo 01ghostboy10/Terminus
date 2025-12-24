@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cf0aarbbrff5x"]
+[gd_scene load_steps=18 format=3 uid="uid://cf0aarbbrff5x"]
 
 [ext_resource type="Texture2D" uid="uid://cfbkytsipfctj" path="res://★ Files ★/★ Images ★/Wallpaper.png" id="1_0g0ev"]
 [ext_resource type="Script" uid="uid://dl5hts6nabli6" path="res://★ Scripts ★/main.gd" id="1_ms1t0"]
@@ -12,6 +12,13 @@
 [ext_resource type="Texture2D" uid="uid://cb0dvloxptvjw" path="res://★ Files ★/★ Images ★/TERMINAL-ICON-OUTLINE.png" id="8_tnhrd"]
 [ext_resource type="Texture2D" uid="uid://ngo5c3a340s2" path="res://★ Files ★/★ Images ★/MESSAGES-ICON.png" id="9_713c3"]
 [ext_resource type="Texture2D" uid="uid://d2xmeftpuxnqx" path="res://★ Files ★/★ Images ★/MESSAGES-ICON-OUTLINE.png" id="10_j3xoj"]
+[ext_resource type="AudioStream" uid="uid://86g1tr8bew7p" path="res://★ Files ★/★ Sounds ★/click1.wav" id="13_fax7y"]
+[ext_resource type="AudioStream" uid="uid://bd560ymmpptl6" path="res://★ Files ★/★ Sounds ★/click2.wav" id="14_gmcmp"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_dfaut"]
+streams_count = 2
+stream_0/stream = ExtResource("13_fax7y")
+stream_1/stream = ExtResource("14_gmcmp")
 
 [sub_resource type="Theme" id="Theme_ocyab"]
 default_font = ExtResource("6_upfbo")
@@ -27,7 +34,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_ms1t0")
+
+[node name="keyboard_noises" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_dfaut")
 
 [node name="Wallpaper" type="TextureRect" parent="."]
 layout_mode = 1

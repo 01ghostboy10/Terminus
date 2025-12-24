@@ -1,12 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://r52l6fqy06yx"]
+[gd_scene load_steps=9 format=3 uid="uid://r52l6fqy06yx"]
 
 [ext_resource type="Script" uid="uid://dy50cgluxjsiu" path="res://★ Scenes ★/lockscreen.gd" id="1_juwbm"]
 [ext_resource type="Texture2D" uid="uid://cfbkytsipfctj" path="res://★ Files ★/★ Images ★/Wallpaper.png" id="1_tj208"]
 [ext_resource type="Texture2D" uid="uid://beyg6x6tn7j00" path="res://★ Files ★/★ Images ★/shiba-star.png" id="2_cpucc"]
 [ext_resource type="FontFile" uid="uid://cu3ebes5jtte8" path="res://★ Files ★/★ Fonts ★/easvhs.ttf" id="3_cpucc"]
+[ext_resource type="AudioStream" uid="uid://86g1tr8bew7p" path="res://★ Files ★/★ Sounds ★/click1.wav" id="5_us5vg"]
+[ext_resource type="AudioStream" uid="uid://bd560ymmpptl6" path="res://★ Files ★/★ Sounds ★/click2.wav" id="6_rbthb"]
 
 [sub_resource type="Theme" id="Theme_juwbm"]
 default_font = ExtResource("3_cpucc")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7wps3"]
+random_pitch = 1.2
+streams_count = 2
+stream_0/stream = ExtResource("5_us5vg")
+stream_1/stream = ExtResource("6_rbthb")
 
 [node name="Lockscreen" type="Control"]
 layout_mode = 3
@@ -56,3 +64,9 @@ offset_right = 1116.0
 offset_bottom = 168.0
 theme = SubResource("Theme_juwbm")
 text = "(hint: the password is 'qwertyuiop' for now because the game is in development.)"
+
+[node name="juicy_keyboard_ignore" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_7wps3")
+
+[node name="keyboard_noises" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_7wps3")

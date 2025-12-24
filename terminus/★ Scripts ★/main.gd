@@ -11,3 +11,8 @@ func _process(_delta):
 	# Format: dd mm yyyy
 	var _text = "%02d %02d %04d" % [dt.day, dt.month, dt.year]
 	$Bar/Date.text = _text
+
+func _input(event):
+		#keyboard noises
+	if event is InputEventKey and event.pressed and not event.echo:
+		$keyboard_noises.play()
