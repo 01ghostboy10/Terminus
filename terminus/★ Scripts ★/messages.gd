@@ -184,10 +184,5 @@ func _on_contact5_pressed() -> void:
 func _on_contact7_pressed() -> void:
 	get_node("Panel/VBoxContainer/message_display/VBoxContainer/Name").text = str("KOIIIIIII")
 	get_node("Panel/VBoxContainer/message_display/VBoxContainer/MarginContainer/content").text = str("""
-[color=#c0c0c0]────────────11/03/2011[/color]
-
-[color=#ffb523]KOIIIIIII:[/color] Heyyyyyyy, idk how are you.......
-[color=#9ba87e]you:[/color] how did you get my contact??
-[color=#ffb523]mia:[/color] Hi, m6kj1rp 
-[color=#ffb523]you:[/color] Whattt????
+-
 """)
