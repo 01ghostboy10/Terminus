@@ -168,19 +168,6 @@ func _on_contact5_pressed() -> void:
 
 
 
-#qwerijnjnjnjiiijnijn
-#vvhvh########### b,hgv,gg,,gghv,gvkvhgvvkhgvkhvkjgvkgvkgghvkhgvkhgvhgvhgvhghvhvhgvgv
-#lev is
-#lev@is-@!
-#dfkkkpokopokopokopopkopokopkpopokpkjkkjjkkjkljkjkjklkjljlkjlljklk
-#kj
-#ljjkklkjkjl
-#screams in frustration:
-#like this
-#AaaaaAAAAaaaAAAaaajdhjshdjshdjhjh293h83j8dj98J938j98jd938j#(*JF(*J(*#FJ(*8eifjf
-#
-
-
 func _on_contact7_pressed() -> void:
 	get_node("Panel/VBoxContainer/message_display/VBoxContainer/Name").text = str("KOIIIIIII")
 	get_node("Panel/VBoxContainer/message_display/VBoxContainer/MarginContainer/content").text = str("""

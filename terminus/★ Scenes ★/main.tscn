@@ -44,7 +44,7 @@ default_font_size = 14
 
 [sub_resource type="Theme" id="Theme_2k72w"]
 default_font = ExtResource("6_upfbo")
-default_font_size = 8
+default_font_size = 10
 
 [sub_resource type="Animation" id="Animation_gqlmo"]
 length = 0.001
@@ -63,7 +63,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_d3mpj"]
 resource_name = "move"
-length = 3.0
+length = 5.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -71,10 +71,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5, 2.5, 3),
+"times": PackedFloat32Array(0, 0.5, 4.5, 5),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1159, 2), Vector2(970, 2), Vector2(970, 2), Vector2(1159, 2)]
+"values": [Vector2(1159, 2), Vector2(950, 2), Vector2(950, 2), Vector2(1159, 2)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xith2"]
@@ -129,6 +129,7 @@ expand_mode = 2
 [node name="Terminal" parent="." instance=ExtResource("4_ocyab")]
 
 [node name="Messages" parent="." instance=ExtResource("5_8sq8x")]
+visible = false
 
 [node name="notes-icon" type="TextureButton" parent="."]
 layout_mode = 0
@@ -236,22 +237,22 @@ vertical_alignment = 1
 layout_mode = 0
 offset_left = 1159.0
 offset_top = 2.0
-offset_right = 1309.0
-offset_bottom = 72.0
+offset_right = 1349.0006
+offset_bottom = 82.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_kq8ld")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="notification"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 190.0
+offset_bottom = 70.0
 
 [node name="MarginContainer" type="MarginContainer" parent="notification/HBoxContainer"]
 layout_mode = 2
 theme_override_constants/margin_left = 6
 
 [node name="VBoxContainer" type="VBoxContainer" parent="notification/HBoxContainer"]
+custom_minimum_size = Vector2(175, 0)
 layout_mode = 2
-theme_override_constants/separation = 10
 
 [node name="MarginContainer" type="MarginContainer" parent="notification/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 10)

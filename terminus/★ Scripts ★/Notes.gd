@@ -45,7 +45,38 @@ func _on_button3_pressed() -> void:
 	get_node("Panel/Bar/VBoxContainer2/Title").text = str(" ")
 	get_node("Panel/Bar/VBoxContainer2/Panel/HBoxContainer/Date").text = str("Journal      ")
 	get_node("Panel/Bar/VBoxContainer2/Panel/HBoxContainer/ScrollContainer/RichTextLabel").text = str("""
-	Hello, this is one text… not sure what it's supposed to be.
+	hey, I'm the creator of this game :)
+	try looking through these notes to find something interesting.
+		as of now, you probably won't find much. but I hope to add more soon!!
+		
+		spoiler, if you're really stuck…:
+			
+			
+			
+			
+			
+			
+			
+			
+			try typing open a- ARCHIVISTS
+			
+			
+			
+			
+			
+			
+			
+			do you want to login? there isn't anything there, but try…
+			
+			
+			username: shrek
+			password: onionboy123
+			
+			
+			lololol
+		
+		
+		
 	""")
 	$Panel/Bar/VBoxContainer2/Panel/HBoxContainer/ScrollContainer/RichTextLabel.editable = false
 	
@@ -53,7 +84,7 @@ func _on_button4_pressed() -> void:
 	get_node("Panel/Bar/VBoxContainer2/Title").text = str(" ")
 	get_node("Panel/Bar/VBoxContainer2/Panel/HBoxContainer/Date").text = str("04/Jan/2011      ")
 	get_node("Panel/Bar/VBoxContainer2/Panel/HBoxContainer/ScrollContainer/RichTextLabel").text = str("""
-	Hello, this is one text… not sure what it's supposed to be.
+	(work in progress… placeholder text!)
 	""")
 	$Panel/Bar/VBoxContainer2/Panel/HBoxContainer/ScrollContainer/RichTextLabel.editable = false
 	
@@ -61,7 +92,7 @@ func _on_button5_pressed() -> void:
 	get_node("Panel/Bar/VBoxContainer2/Title").text = str(" ")
 	get_node("Panel/Bar/VBoxContainer2/Panel/HBoxContainer/Date").text = str("05/Jan/2011      ")
 	get_node("Panel/Bar/VBoxContainer2/Panel/HBoxContainer/ScrollContainer/RichTextLabel").text = str("""
-	Hello, this is one text… not sure what it's supposed to be.
+	(work in progress… placeholder text!)
 	""")
 	$Panel/Bar/VBoxContainer2/Panel/HBoxContainer/ScrollContainer/RichTextLabel.editable = false
 	
@@ -69,7 +100,7 @@ func _on_button6_pressed() -> void:
 	get_node("Panel/Bar/VBoxContainer2/Title").text = str(" ")
 	get_node("Panel/Bar/VBoxContainer2/Panel/HBoxContainer/Date").text = str("06/Jan/2011      ")
 	get_node("Panel/Bar/VBoxContainer2/Panel/HBoxContainer/ScrollContainer/RichTextLabel").text = str("""
-	Hello, this is one text… not sure what it's supposed to be.
+	(work in progress… placeholder text!)
 	""")
 	$Panel/Bar/VBoxContainer2/Panel/HBoxContainer/ScrollContainer/RichTextLabel.editable = false
 	
@@ -77,7 +108,7 @@ func _on_button7_pressed() -> void:
 	get_node("Panel/Bar/VBoxContainer2/Title").text = str(" ")
 	get_node("Panel/Bar/VBoxContainer2/Panel/HBoxContainer/Date").text = str("07/Jan/2011      ")
 	get_node("Panel/Bar/VBoxContainer2/Panel/HBoxContainer/ScrollContainer/RichTextLabel").text = str("""
-	Hello, this is one text… not sure what it's supposed to be.
+	(work in progress… placeholder text!)
 	""")
 	$Panel/Bar/VBoxContainer2/Panel/HBoxContainer/ScrollContainer/RichTextLabel.editable = false
 	

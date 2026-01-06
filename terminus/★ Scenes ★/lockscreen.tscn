@@ -54,6 +54,7 @@ theme_override_colors/font_placeholder_color = Color(1, 1, 1, 0.6)
 theme_override_fonts/font = ExtResource("3_cpucc")
 theme_override_font_sizes/font_size = 17
 placeholder_text = "password"
+alignment = 2
 secret = true
 secret_character = "*"
 
