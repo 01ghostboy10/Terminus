@@ -14,7 +14,7 @@ My hope is to have all the mechanics fully finished during future development as
 <img width="990" height="550" alt="Snímek obrazovky 2025-12-26 v 18 06 24" src="https://github.com/user-attachments/assets/bba6ee0f-345c-4ace-943d-52f55ecfb6e1" />
 
 
-Where to play? Just here: {link}
+Where to play? Just here: [{link}](https://onlyth3best.itch.io/terminus)
 
   
 
