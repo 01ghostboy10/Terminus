@@ -171,6 +171,11 @@ scale = Vector2(0.7, 0.7)
 texture_normal = ExtResource("14_dfaut")
 texture_hover = ExtResource("15_dfaut")
 
+[node name="music-icon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="Bar" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 12

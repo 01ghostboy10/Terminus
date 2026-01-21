@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="TERMINUS"
-run/main_scene="uid://r52l6fqy06yx"
+run/main_scene="uid://bhbla0tnk2s13"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 

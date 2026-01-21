@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://bhbla0tnk2s13"]
+
+[ext_resource type="Script" uid="uid://psf87ap5idfl" path="res://★ Scenes ★/start.gd" id="1_atis5"]
+[ext_resource type="Texture2D" uid="uid://bfy41cffiv8ej" path="res://★ Files ★/★ Images ★/terminus-logo-Recovered.png" id="1_hi7i2"]
+[ext_resource type="Texture2D" uid="uid://dw7y1ceb35l5v" path="res://★ Files ★/★ Images ★/start.png" id="2_atis5"]
+[ext_resource type="Texture2D" uid="uid://fio7nc5rlug" path="res://★ Files ★/★ Images ★/startpress.png" id="3_ra7sy"]
+
+[node name="start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_atis5")
+
+[node name="bg" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="logo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 275.0
+offset_top = -66.0
+offset_right = 875.0
+offset_bottom = 534.0
+texture = ExtResource("1_hi7i2")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 389.0
+offset_right = 690.0
+offset_bottom = 464.0
+texture_normal = ExtResource("2_atis5")
+texture_pressed = ExtResource("3_ra7sy")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_start_pressed"]

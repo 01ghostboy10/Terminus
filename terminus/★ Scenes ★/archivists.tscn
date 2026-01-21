@@ -45,59 +45,65 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_6jke2")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 7
 
-[node name="about" type="VBoxContainer" parent="Panel/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="about" type="VBoxContainer" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HSeparator" type="HSeparator" parent="Panel/HBoxContainer/about"]
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/HBoxContainer/about"]
 layout_mode = 2
 theme_override_constants/separation = 10
 theme_override_styles/separator = SubResource("StyleBoxLine_6jke2")
 
-[node name="Label" type="Label" parent="Panel/HBoxContainer/about"]
+[node name="aboutlabel" type="Label" parent="Panel/MarginContainer/HBoxContainer/about"]
 custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
 text = "ABOUT"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="Panel/HBoxContainer/about"]
+[node name="aboutcontent" type="Label" parent="Panel/MarginContainer/HBoxContainer/about"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "sdssd"
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/HBoxContainer/about"]
 layout_mode = 2
 
-[node name="bargains" type="VBoxContainer" parent="Panel/HBoxContainer"]
+[node name="bargains" type="VBoxContainer" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HSeparator" type="HSeparator" parent="Panel/HBoxContainer/bargains"]
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/HBoxContainer/bargains"]
 layout_mode = 2
 theme_override_constants/separation = 10
 theme_override_styles/separator = SubResource("StyleBoxLine_6jke2")
 
-[node name="Label" type="Label" parent="Panel/HBoxContainer/bargains"]
+[node name="bargainlabel" type="Label" parent="Panel/MarginContainer/HBoxContainer/bargains"]
 custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
 text = "BARGAINS"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="memories" type="VBoxContainer" parent="Panel/HBoxContainer"]
+[node name="memories" type="VBoxContainer" parent="Panel/MarginContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HSeparator" type="HSeparator" parent="Panel/HBoxContainer/memories"]
+[node name="HSeparator" type="HSeparator" parent="Panel/MarginContainer/HBoxContainer/memories"]
 layout_mode = 2
 theme_override_constants/separation = 10
 theme_override_styles/separator = SubResource("StyleBoxLine_6jke2")
 
-[node name="Label" type="Label" parent="Panel/HBoxContainer/memories"]
+[node name="memorieslabel" type="Label" parent="Panel/MarginContainer/HBoxContainer/memories"]
 custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
 text = "MEMORIES"
@@ -105,6 +111,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="login" type="Panel" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
