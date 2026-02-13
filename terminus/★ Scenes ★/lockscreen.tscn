@@ -58,7 +58,7 @@ alignment = 2
 secret = true
 secret_character = "*"
 
-[node name="Label" type="Label" parent="."]
+[node name="hintintintin" type="Label" parent="."]
 layout_mode = 0
 offset_left = 526.0
 offset_top = 145.0

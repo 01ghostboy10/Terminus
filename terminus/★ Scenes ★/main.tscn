@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cf0aarbbrff5x"]
+[gd_scene load_steps=34 format=3 uid="uid://cf0aarbbrff5x"]
 
 [ext_resource type="Texture2D" uid="uid://cfbkytsipfctj" path="res://★ Files ★/★ Images ★/Wallpaper.png" id="1_0g0ev"]
 [ext_resource type="Script" uid="uid://dl5hts6nabli6" path="res://★ Scripts ★/main.gd" id="1_ms1t0"]
@@ -22,6 +22,8 @@
 [ext_resource type="AudioStream" uid="uid://bd560ymmpptl6" path="res://★ Files ★/★ Sounds ★/click2.wav" id="14_gmcmp"]
 [ext_resource type="Texture2D" uid="uid://cqcplb2cvruuk" path="res://★ Files ★/★ Images ★/eyehover2.png" id="15_dfaut"]
 [ext_resource type="Texture2D" uid="uid://cn7hxp3y66jrk" path="res://★ Files ★/★ Images ★/notiff.png" id="21_cprxh"]
+[ext_resource type="Texture2D" uid="uid://c5fwgql3u1oix" path="res://★ Files ★/★ Images ★/about-reg.png" id="23_2k72w"]
+[ext_resource type="Texture2D" uid="uid://dtlhhxw40rb5r" path="res://★ Files ★/★ Images ★/about.png" id="24_d3mpj"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_dfaut"]
 streams_count = 2
@@ -279,6 +281,16 @@ autowrap_mode = 1
 libraries = {
 &"": SubResource("AnimationLibrary_xith2")
 }
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 472.0
+offset_right = 229.0
+offset_bottom = 601.0
+scale = Vector2(0.68, 0.68)
+texture_normal = ExtResource("23_2k72w")
+texture_pressed = ExtResource("24_d3mpj")
 
 [connection signal="pressed" from="notes-icon" to="Notes" method="_on_notes_pressed"]
 [connection signal="pressed" from="terminal-icon" to="Terminal" method="_on_TERMINAL_pressed"]

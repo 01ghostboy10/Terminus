@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bhbla0tnk2s13"]
+[gd_scene load_steps=6 format=3 uid="uid://bhbla0tnk2s13"]
 
 [ext_resource type="Script" uid="uid://psf87ap5idfl" path="res://★ Scenes ★/start.gd" id="1_atis5"]
 [ext_resource type="Texture2D" uid="uid://bfy41cffiv8ej" path="res://★ Files ★/★ Images ★/terminus-logo-Recovered.png" id="1_hi7i2"]
 [ext_resource type="Texture2D" uid="uid://dw7y1ceb35l5v" path="res://★ Files ★/★ Images ★/start.png" id="2_atis5"]
 [ext_resource type="Texture2D" uid="uid://fio7nc5rlug" path="res://★ Files ★/★ Images ★/startpress.png" id="3_ra7sy"]
+[ext_resource type="AudioStream" uid="uid://cg08cwn5aoox4" path="res://★ Files ★/★ Sounds ★/site_public_loadingSound.mp3" id="5_ra7sy"]
 
 [node name="start" type="Control"]
 layout_mode = 3
@@ -25,19 +26,22 @@ color = Color(0, 0, 0, 1)
 
 [node name="logo" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 275.0
-offset_top = -66.0
-offset_right = 875.0
-offset_bottom = 534.0
+offset_left = 276.0
+offset_top = -43.0
+offset_right = 876.0
+offset_bottom = 557.0
 texture = ExtResource("1_hi7i2")
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="start" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 461.0
-offset_top = 389.0
-offset_right = 690.0
-offset_bottom = 464.0
+offset_left = 461.5
+offset_top = 424.0
+offset_right = 690.5
+offset_bottom = 499.0
 texture_normal = ExtResource("2_atis5")
 texture_pressed = ExtResource("3_ra7sy")
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_start_pressed"]
+[node name="glitch" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ra7sy")
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]

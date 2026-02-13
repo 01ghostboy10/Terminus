@@ -339,10 +339,22 @@ layout_mode = 2
 theme_override_constants/separation = 10
 theme_override_styles/separator = SubResource("StyleBoxLine_wrgkd")
 
-[node name="Name" type="RichTextLabel" parent="Panel/VBoxContainer/message_display/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/message_display/VBoxContainer"]
+layout_mode = 2
+
+[node name="Name" type="RichTextLabel" parent="Panel/VBoxContainer/message_display/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(0, 45)
 layout_mode = 2
+size_flags_horizontal = 3
 theme = SubResource("Theme_86b7h")
+theme_override_constants/line_separation = 10
+theme_override_constants/paragraph_separation = 10
+
+[node name="status" type="RichTextLabel" parent="Panel/VBoxContainer/message_display/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 45)
+layout_mode = 2
+theme = SubResource("Theme_86b7h")
+theme_override_colors/default_color = Color(0.7941207, 0.7941206, 0.7941206, 1)
 theme_override_constants/line_separation = 10
 theme_override_constants/paragraph_separation = 10
 

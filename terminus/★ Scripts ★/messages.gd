@@ -11,7 +11,7 @@ func _on_messagesicon_pressed() -> void:
 #sdjskdjskjdkjkj
 
 func _on_contact1_pressed() -> void:
-	get_node("Panel/VBoxContainer/message_display/VBoxContainer/Name").text = str("Hello!")
+	get_node("Panel/VBoxContainer/message_display/VBoxContainer/HBoxContainer/Name").text = str("Hello!")
 	get_node("Panel/VBoxContainer/message_display/VBoxContainer/MarginContainer/content").text = str("""
 onlyth3best: Hello, player!
 
@@ -23,7 +23,7 @@ onlyth3best: …look through the notes for Terminal commands. try finding some f
 """)
 
 func _on_contact2_pressed() -> void:
-	get_node("Panel/VBoxContainer/message_display/VBoxContainer/Name").text = str("paluuu_v")
+	get_node("Panel/VBoxContainer/message_display/VBoxContainer/HBoxContainer/Name").text = str("paluuu_v")
 	get_node("Panel/VBoxContainer/message_display/VBoxContainer/MarginContainer/content").text = str("""
 [color=#c0c0c0]────────────13/06/2011[/color]
 [color=#ee4bfb]paluuu_v [color=#c0c0c0]at 15:11:[/color][/color] yooo
@@ -78,7 +78,7 @@ func _on_contact2_pressed() -> void:
 """)
 
 func _on_contact3_pressed() -> void:
-	get_node("Panel/VBoxContainer/message_display/VBoxContainer/Name").text = str("m6kj1rp")
+	get_node("Panel/VBoxContainer/message_display/VBoxContainer/HBoxContainer/Name").text = str("m6kj1rp")
 	get_node("Panel/VBoxContainer/message_display/VBoxContainer/MarginContainer/content").text = str("""
 [color=#c0c0c0]────────────13/08/2011[/color]
 [color=#3588fc]m6kj1rp [color=#c0c0c0]at 13:21:[/color][/color] Hello, you're [hint="{*******}"]{REDACTED}[/hint], right?
@@ -110,7 +110,7 @@ func _on_contact3_pressed() -> void:
 """)
 
 func _on_contact4_pressed() -> void:
-	get_node("Panel/VBoxContainer/message_display/VBoxContainer/Name").text = str("ARCHIVISTS HELPBOT")
+	get_node("Panel/VBoxContainer/message_display/VBoxContainer/HBoxContainer/Name").text = str("ARCHIVISTS HELPBOT")
 	get_node("Panel/VBoxContainer/message_display/VBoxContainer/MarginContainer/content").text = str("""
 [color=#c0c0c0]────────────13/08/2011[/color]
 [color=#9ba87e]you [color=#c0c0c0]at 15:20:[/color][/color] Hi, can I ask a question
@@ -154,7 +154,7 @@ NOTE: /0 or /1 after an attempted action displays the outcome (/0 = failed, /1 =
 
 #add this
 func _on_contact5_pressed() -> void:
-	get_node("Panel/VBoxContainer/message_display/VBoxContainer/Name").text = str("AHSJHDJSHDJS")
+	get_node("Panel/VBoxContainer/message_display/VBoxContainer/HBoxContainer/Name").text = str("AHSJHDJSHDJS")
 	get_node("Panel/VBoxContainer/message_display/VBoxContainer/MarginContainer/content").text = str("""
 
 """)
@@ -169,7 +169,7 @@ func _on_contact5_pressed() -> void:
 
 
 func _on_contact7_pressed() -> void:
-	get_node("Panel/VBoxContainer/message_display/VBoxContainer/Name").text = str("KOIIIIIII")
+	get_node("Panel/VBoxContainer/message_display/VBoxContainer/HBoxContainer/Name").text = str("KOIIIIIII")
 	get_node("Panel/VBoxContainer/message_display/VBoxContainer/MarginContainer/content").text = str("""
 -
 """)
