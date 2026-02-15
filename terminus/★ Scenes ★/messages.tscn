@@ -351,12 +351,13 @@ theme_override_constants/line_separation = 10
 theme_override_constants/paragraph_separation = 10
 
 [node name="status" type="RichTextLabel" parent="Panel/VBoxContainer/message_display/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(200, 45)
+custom_minimum_size = Vector2(185, 45)
 layout_mode = 2
 theme = SubResource("Theme_86b7h")
 theme_override_colors/default_color = Color(0.7941207, 0.7941206, 0.7941206, 1)
 theme_override_constants/line_separation = 10
 theme_override_constants/paragraph_separation = 10
+horizontal_alignment = 2
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer/message_display/VBoxContainer"]
 layout_mode = 2

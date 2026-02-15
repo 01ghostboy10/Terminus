@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://cf0aarbbrff5x"]
+[gd_scene load_steps=36 format=3 uid="uid://cf0aarbbrff5x"]
 
 [ext_resource type="Texture2D" uid="uid://cfbkytsipfctj" path="res://★ Files ★/★ Images ★/Wallpaper.png" id="1_0g0ev"]
 [ext_resource type="Script" uid="uid://dl5hts6nabli6" path="res://★ Scripts ★/main.gd" id="1_ms1t0"]
@@ -24,6 +24,8 @@
 [ext_resource type="Texture2D" uid="uid://cn7hxp3y66jrk" path="res://★ Files ★/★ Images ★/notiff.png" id="21_cprxh"]
 [ext_resource type="Texture2D" uid="uid://c5fwgql3u1oix" path="res://★ Files ★/★ Images ★/about-reg.png" id="23_2k72w"]
 [ext_resource type="Texture2D" uid="uid://dtlhhxw40rb5r" path="res://★ Files ★/★ Images ★/about.png" id="24_d3mpj"]
+[ext_resource type="Texture2D" uid="uid://dqmtnauvkup3i" path="res://★ Files ★/★ Images ★/settings-reg.png" id="25_gqlmo"]
+[ext_resource type="Texture2D" uid="uid://dur8ugtfbhew0" path="res://★ Files ★/★ Images ★/settings.png" id="26_xith2"]
 
 [sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_dfaut"]
 streams_count = 2
@@ -131,7 +133,6 @@ expand_mode = 2
 [node name="Terminal" parent="." instance=ExtResource("4_ocyab")]
 
 [node name="Messages" parent="." instance=ExtResource("5_8sq8x")]
-visible = false
 
 [node name="notes-icon" type="TextureButton" parent="."]
 layout_mode = 0
@@ -272,6 +273,7 @@ text = "! NEW NOTIFICATION !"
 horizontal_alignment = 1
 
 [node name="text" type="Label" parent="notification/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_vertical = 3
 theme = SubResource("Theme_2k72w")
@@ -282,7 +284,7 @@ libraries = {
 &"": SubResource("AnimationLibrary_xith2")
 }
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="about" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 127.0
 offset_top = 472.0
@@ -291,6 +293,16 @@ offset_bottom = 601.0
 scale = Vector2(0.68, 0.68)
 texture_normal = ExtResource("23_2k72w")
 texture_pressed = ExtResource("24_d3mpj")
+
+[node name="settings" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 224.00002
+offset_top = 408.0
+offset_right = 326.0
+offset_bottom = 537.0
+scale = Vector2(0.68, 0.68)
+texture_normal = ExtResource("25_gqlmo")
+texture_pressed = ExtResource("26_xith2")
 
 [connection signal="pressed" from="notes-icon" to="Notes" method="_on_notes_pressed"]
 [connection signal="pressed" from="terminal-icon" to="Terminal" method="_on_TERMINAL_pressed"]
